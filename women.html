@@ -1,1 +1,46 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Products - MyShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">MyShop</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <input type="text" id="search" placeholder="Search products...">
+    </nav>
+
+    <section class="products">
+        <h2>Women's Collection</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/women1.jpg" alt="Women Product 1">
+                <h3>Women Product 1</h3>
+                <p>$60</p>
+                <button onclick="addToCart('Women Product 1')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/women2.jpg" alt="Women Product 2">
+                <h3>Women Product 2</h3>
+                <p>$80</p>
+                <button onclick="addToCart('Women Product 2')">Add to Cart</button>
+            </div>
+            <!-- Add more women products here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
