@@ -1,51 +1,42 @@
-
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>میری پہلی ویب سائٹ</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>خوش آمدید میری ویب سائٹ پر</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">ہوم</a></li>
-                <li><a href="#about">ہمارے بارے میں</a></li>
-                <li><a href="#contact">رابطہ کریں</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>My E-Commerce Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
 
-    <section id="home">
-        <h2>ہوم پیج</h2>
-        <p>یہ میرا پہلا ویب پیج ہے جو میں GitHub Pages پر چلا رہا ہوں۔</p>
+  <main>
+    <section class="hero">
+      <h2>Welcome to Our Store!</h2>
+      <p>Shop for Men, Women & Kids Products</p>
+      <a href="shop.html" class="btn">Start Shopping</a>
     </section>
 
-    <section id="about">
-        <h2>ہمارے بارے میں</h2>
-        <p>یہاں ہم اپنی خدمات اور معلومات فراہم کرتے ہیں۔</p>
+    <section class="categories">
+      <h3>Categories</h3>
+      <div class="category-list">
+        <a href="shop.html?category=men">Men</a>
+        <a href="shop.html?category=women">Women</a>
+        <a href="shop.html?category=kids">Kids</a>
+      </div>
     </section>
+  </main>
 
-    <section id="contact">
-        <h2>رابطہ کریں</h2>
-        <form>
-            <label>نام:</label>
-            <input type="text" placeholder="اپنا نام درج کریں">
-            <label>ای میل:</label>
-            <input type="email" placeholder="اپنا ای میل درج کریں">
-            <label>پیغام:</label>
-            <textarea placeholder="اپنا پیغام لکھیں"></textarea>
-            <button type="submit">ارسال کریں</button>
-        </form>
-    </section>
+  <footer>
+    <p>&copy; 2025 My E-Commerce Store</p>
+  </footer>
 
-    <footer>
-        <p>&copy; 2025 میری ویب سائٹ</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
